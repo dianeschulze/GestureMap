@@ -1,1 +1,174 @@
-Content!!!!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <title>GestureMap</title>
+  </head>
+
+  <body>
+  	<div id="header"><h1>GestureMap</h1>
+		<h6>Comprehensive gesture visualizations for touch devices</h6>
+	</div>
+
+   	<div id="wrap">	
+	<div id="nav" align="center">
+		<ul>
+		<li><a href="#introduction"> Introduction </a></li>
+		<li><a href="#gesturemapintro"> GestureMap </a></li>
+		<li><a href="#animations"> Gestures and Description </a></li>
+		<li><a href="#beforeandafter"> Before and After </a></li>
+
+		</ul>
+	</div>
+    	
+	<h2 id="introduction">Introduction</h2>
+	<p> As touch screens become more and more ubiquitous, we need tools that allow users to teach and learn any software on a touchscreen device. </p>
+	 
+	 <p> Look at the gif below on the left. This is what Android Screencast captures. 
+	 Can you tell what gestures the user is performing just by following the white dots 
+	 indicating where the user is touching? </p>
+
+	<p> Now look at the gif on the right. This is what our GestureMap captures.
+	 Can you tell what gesture the user is performing now? Which tool showed a more 
+	 intuitive animation? </p>
+
+	 <div>
+		 <table style="width:50%" align='center' cellpadding="90px">
+
+		   <tr>
+				<td><h6>Screencast</h6> <img src="images/ScreenC.gif" ALT="Actual Gestures" width="200px"></td>
+			
+				<td><h6>GestureMap</h6><img src="images/GM_zoomout.gif" ALT="Screencast" width="200px"></td> 
+		   </tr>
+		 </table>
+	 </div>
+	
+		
+	<h4> How would you teach a group of people to learn a software tool on a computer? </h4>
+	<p> Imagine you want to teach a classroom of students to use a software tool on a
+	computer. With mouse-input interfaces, teaching software tools via a projection of the
+	computer screen is easy and effective because students can follow the teacher's cursor
+	on the screen. The cursor position tells nearly the whole story, and the teacher can 
+	quickly and simply communicate any other details of the gesture, such as "right-click" or 
+	"click and hold". </p>
+	<div align="center" padding="20px 20px 20px 20px"><img src="images/Desktop.gif" ALT="Actual Gestures" width="500px" ></div>
+	<h4> But how do we teach people to learn a software tool on a touch interface? </h4>
+	<p> Touch gestures are much more complex than the mouse-input interface of a computer. Multitouch and different combinations
+	of touches produce different results. It is harder to teach touch interfaces in the classroom environment because a projection
+	of the touch points does not give a good understanding of complex gestures. </p>
+   
+
+   
+<table style="width:50%" align='center' cellpadding="90px">
+   <tr>
+    <td><h6>Actual Gestures</h6><img src="images/android_touch.gif" ALT="Actual Gestures" width="200px"></td>
+    <td><h6>Screencast</h6><img src="images/ScreenC.gif" ALT="Screencast" width="200px"></td> 
+   </tr>
+ </table>
+ 	<h6 align="center">Screencast leaves much to be desired!</h6>
+ 
+ 
+	<h2 id="gesturemapintro">Introducing GestureMap</h2>
+	<h4>Why is it important to develop tools to help teach software on a touch interface?</h4>
+	<p> People use touch interfaces for more than just games on their phones. For example, Adobe's new mobile products enable artists to produce professional work from their touch devices. </p>
+	<p>In addition, more and more people are using touch devices. Elementary school teachers need to show their students how to complete tablet-based activities, and college students around the world need to debug their grandparents' iPads over the phone. </p>
+
+	<h4>We have developed intuitive animations that can be used to teach touch interfaces. </h4> <p>For example, when the teacher swipes the 
+	touch screen, our swipe animation appears on the projector, and students can easily follow along.</p>
+
+ 
+
+	<h2 id="animations">Gestures</h2>
+	<p>A circle indicates where the fingers touch the screen. Increasingly complex gestures are communicated by combining simple building blocks, including arrows and rings.</p>
+
+	<table  style="width:100%" id="gesturetable">
+	<tr>
+		<td><h3>Tap</h3><p>The most basic gesture in a touch screen user's toolbox. GestureMap models Tap with a dot that appears and then vanishes. </p></td>
+		<td align="center" bgcolor="white"><img src="images/tap.gif" ALT="tap" width="75px"></td>
+		<td><h3>Double Tap</h3><p>Multiple Taps string together Tap animations labeled with the number of taps. </p></td>
+		<td align="center" bgcolor="white"><img src="images/double_tap.gif" ALT="double_tap" width="75px"></td>
+	</tr>
+	
+	<tr>
+		<td><h3>Swipe</h3><p> A position marker moves in the direction of your 
+		swipe with arrows indcating the swipe path. The arrows fade as the user completes the gesture. </p></td>
+		<td align="center" bgcolor="white"><img src="images/swipe.gif" ALT="swipe" width="200px"></td>
+		<td><h3>Drag</h3><p> Dragging is swiping+selection. A frame outlines the item that is being dragged.</p></td>
+		<td align="center" bgcolor="white"><img src="images/drag.gif" ALT="drag" width="200px"></td>
+	</tr>
+	<tr>
+		<td><h3>Zoom In</h3><p> The dots show the initial touch points of the 
+		 two fingers, while arrows show the direction of the pinch.  The arrows fade as the user completes the gesture.</p></td>
+		<td align="center" bgcolor="white"><img src="images/zoom_in.gif" ALT="zoom_in" width="200px"></td>
+		<td><h3>Zoom Out</h3><p>Similar to Zoom In, Zoom Out shows the initial touch points with arrows demonstrating the direction of the pinch. The arrows fade as the user completes the gesture.</p></td>
+		<td align="center" bgcolor="white"><img src="images/zoom_out.gif" ALT="zoom_out" width="200px"></td>
+	</tr>
+	<tr>
+		<td><h3>Press And Hold</h3><p> Ripples indicate that the user is holding the touch</p></td>
+		<td align="center" bgcolor="white"><img src="images/press_and_hold.gif" ALT="press_and_hold" width="75px"></td>
+		<td><h3>Rotate</h3><p> Two dots denoting your two touch points appear. Arrows denoting the direction of 
+		rotation appear as you begin to rotate around the center. </p></td>
+		<td align="center" bgcolor="white"><img src="images/rotate3.gif" ALT="rotate" width="150px"></td>
+		</tr>
+	</table>
+
+
+
+<h2 id="beforeandafter">Before and After</h2>
+<div class="comparetable" width-"50%" align="center">	
+	<div class="row">
+		<h6>Tap</h6>
+	    <img src="images/SC_tap.gif" width="200px" class="imgcompare">
+	    <img src="images/GM_tap.gif" width="200px" class="imgcompare">
+	    <h6>Double Tap</h6>
+		<img src="images/SC_doubletap.gif" width="200px" class="imgcompare">
+		<img src="images/GM_doubletap.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Double Tap</h6>
+		<img src="images/SC_doubletap.gif" width="200px" class="imgcompare">
+		<img src="images/GM_doubletap.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Swipe</h6>
+	   	<img src="images/SC_swipe.gif" width="200px" class="imgcompare">
+	   	<img src="images/GM_swipe.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Drag</h6>
+		<img src="images/SC_drag.gif" width="200px" class="imgcompare">
+		<img src="images/DragGesture.gif" width="200px" class="imgcompare">
+
+	</div>
+	<div class="row">
+		<h6>Zoom In</h6>
+	    <img src="images/SC_zoomin.gif" width="200px" class="imgcompare">
+	    <img src="images/GM_zoomin.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Zoom Out</h6>
+	    <img src="images/SC_zoomout.gif" width="200px" class="imgcompare">
+	    <img src="images/GM_zoomout.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Press and hold</h6>
+		<img src="images/SC_pressandhold.gif" width="200px" class="imgcompare">
+		<img src="images/PressHold.gif" width="200px" class="imgcompare">
+	</div>
+	<div class="row">
+		<h6>Rotate</h6>
+	    <img src="images/SC_rotate.gif" width="200px" class="imgcompare">
+	    <img src="images/RotateMap.gif" width="200px" class="imgcompare">
+	</div>
+</div> 
+</div>
+	<div id="footer">
+		<p>Clarissa Clemm, Kshitij Maheshwari, Diane Schulze, Leah Weiner </p>
+		<p>Brown University, User Interface Design, Final Project, December 2015</p>
+	</div>
+  </body>
+</html>
+
+
+
