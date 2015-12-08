@@ -2,11 +2,12 @@
 h1 {
 	margin:0;
 	padding-left:50px;
-	padding-top:10px;
+	padding-top:20px;
+	padding-bottom:20px;
 	font-family: 'Oxygen', sans-serif;
-	font-size: 50px;
+	font-size: 60px;
 	color: #fff;
-	text-align: left;
+	text-align: center;
 }
 h2 {
 	margin-top: 20px;
@@ -47,9 +48,9 @@ h6 {
 
 #header h6{
 	color:#fff;
-	text-align: left;
+	text-align: center;
 	padding-left:50px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .gesturetable h6{
@@ -96,7 +97,8 @@ margin:10px auto;
 padding:0;
 margin:0;	
 background:#3C85FA;
-width:120%;
+width:100%;
+height:200px;
 
 }
 #nav {
@@ -129,6 +131,7 @@ display:inline;
 margin:0;
 padding:10px;
 display: flex;
+font-family: 'Oxygen', sans-serif;
 }
 
 .comparetable h6{
